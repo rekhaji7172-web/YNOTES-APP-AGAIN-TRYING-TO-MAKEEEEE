@@ -1,0 +1,85 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+		97C146E91CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				9740EEB11CF90186004384FC,
+				97C146F01CF9000F007C117D,
+				97C146EF1CF9000F007C117D,
+			);
+			sourceTree = "<group>";
+		};
+		9740EEB11CF90186004384FC = {
+			isa = PBXGroup;
+			children = (
+				9740EEB21CF90186004384FC,
+				9740EEB31CF90186004384FC,
+			);
+			name = Flutter;
+			sourceTree = "<group>";
+		};
+		9740EEB21CF90186004384FC = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = Debug.xcconfig;
+			path = Flutter/Debug.xcconfig;
+			sourceTree = "<group>";
+		};
+		9740EEB31CF90186004384FC = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = Release.xcconfig;
+			path = Flutter/Release.xcconfig;
+			sourceTree = "<group>";
+		};
+		97C146EE1CF9000F007C117D = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C147051CF9000F007C117D;
+			buildPhases = (
+				9740EEB61CF901F6004384FC,
+				97C146EA1CF9000F007C117D,
+				97C146EB1CF9000F007C117D,
+				97C146EC1CF9000F007C117D,
+				9705A1C41CF9048500538489,
+				3B06AD1E1E4923F5004D2608,
+				9740EEB71CF902C7004384FC,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 97C146ED1CF9000F007C117D;
+			productType = "com.apple.product-type.application";
+		};
+		97C146ED1CF9000F007C117D = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = Runner.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97C146EF1CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				97C146F01CF9000F007C117D,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C146F01CF9000F007C117D = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = Runner.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+	};
+	rootObject = 97C146E61CF9000F007C117D;
+}
