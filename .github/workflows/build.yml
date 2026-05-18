@@ -29,13 +29,10 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
 
-    # Yahan spelling bilkul correct kar di gayi hai (cd android)
+    # Yeh step bina kisi file error ke cache ko force-clean karega
     - name: Clean Gradle Cache
       run: |
-        cd android
-        chmod +x gradlew
-        ./gradlew clean
-        cd ..
+        flutter clean
 
     - name: Build APK
       run: flutter build apk --release
