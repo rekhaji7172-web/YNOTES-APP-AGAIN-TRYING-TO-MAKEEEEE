@@ -29,10 +29,11 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
 
-    # Yeh step naye properties ke sath purane cache ko clear karega
+    # Yahan spelling bilkul correct kar di gayi hai (cd android)
     - name: Clean Gradle Cache
       run: |
         cd android
+        chmod +x gradlew
         ./gradlew clean
         cd ..
 
