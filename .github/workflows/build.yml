@@ -2,7 +2,7 @@ name: Flutter APK Build
 
 on:
   push:
-    branches: [ "master" ] # Kyunki aapki branch ka naam master hai
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
@@ -25,8 +25,14 @@ jobs:
       with:
         channel: 'stable'
 
+    - name: Clean Flutter cache
+      run: flutter clean
+
     - name: Install dependencies
       run: flutter pub get
+
+    - name: Clean Android build
+      run: cd android && ./gradlew clean && cd ..
 
     - name: Build APK
       run: flutter build apk --release
